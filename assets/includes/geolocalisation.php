@@ -4,7 +4,10 @@
  * ===================== Geoloc formating =====================
  */
 
+// Formating used in Astrology API, see astrology.php for more informations
+
 $geoloc = unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip='.$_SERVER['REMOTE_ADDR']));
+$time_zone = '';
 
 if($geoloc['geoplugin_continentCode'] == 'EUR')
 {

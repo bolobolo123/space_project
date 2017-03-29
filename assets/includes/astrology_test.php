@@ -1,18 +1,19 @@
-<?php 
-	// Key & Zone
-	$key  = 'YWxsOzAuNTMyNjQ3MDAgMTQ5MDY5MjY5MztTV2RzYTJAZDsyNDU3ODQwLjg4NzY2';
-	$timeZone = 'Europe%2FParis';
+<?php
 
-	// DATE
+/**
+ * ======================== Lunopia API calls ===========================
+ */
+
+//TODO : Wait for provider's response and get a permanent API key for LunopiaAPI.
+//To access it, uncomment the corresponding line in index.php's includes.
+//Following key was a 2 hours trial and is expired.
+
+	$key  = 'YWxsOzAuNTMyNjQ3MDAgMTQ5MDY5MjY5MztTV2RzYTJAZDsyNDU3ODQwLjg4NzY2';
+
 	if (!empty($_GET)) {
-		// DATE RECUPERATION
-		$date = date_create($_GET['date']);
-		$year = date_format($date, 'Y');
-		$month = date_format($date, 'm');
-		$day = date_format($date, 'd');
-		// URL
-		$url  = 'http://www.lunopia.com/call?what=ephem&timeZone='.$timeZone.'&when=specDate&day='.$day.'&month='.$month.'&year='.$year.'&key='.$key;
-		$path = '../cache/'.md5(date_format($date, 'Y-m-d-ephem'));
+
+		$url  = 'http://www.lunopia.com/call?what=ephem&timeZone='.$time_zone.'&when=specDate&day='.$day_of_birth.'&month='.$month_of_birth.'&year='.$year_of_birth.'&key='.$key;
+		$path = '../cache/'.md5(date_format($date_of_birth, 'Y-m-d-ephem'));
 		if (file_exists($path))
 			$forecast = file_get_contents($path);
 		else {
@@ -22,25 +23,9 @@
 		$dataEphem = json_decode($forecast, true);
 	}
 
-/*
-			Age (20) * 100
-			_______________		BIG BANG >	0,000000148%
-			13 500 000 000
-
-			Age (20) * 100
-			_______________ 	VOIE LACTEE > PAREIL
-			13 200 000 000
-
-			Age (20) * 100
-			_______________ 	TERRE > 0,0000004376%
-			 4 570 000 000
-
-			 Age (19) * 365
-			 _______________ 	Nombre de rotation terre sur elle-même > 6 954
-			 0.99726968
-*/
-
-
+/**
+ * ======================== Lunopia data generation ===========================
+ */
 
 ?>
 <!DOCTYPE html>
@@ -50,16 +35,14 @@
 	<title>Astrology</title>
 </head>
 <body>
-	<form action="#" method="GET">
-		<input type="date" name="date" class="dateInp">
-		<input type="text" name="city" class="city">
-		<input type="submit">
-	</form>
 	<div>
-		Vous êtes née sous le signe du <?= $dataEphem[0]['CONSTELLATION'] ?>
-		la lune était en phase <?= $dataEphem[0]['TRAJECTOIRE'] ?> 
-		et montrait son <?= $dataEphem[0]['PHASE'] ?>
+		You're born under the sign of the <?= $dataEphem[0]['CONSTELLATION'] ?>
+		Moon was on stage <?= $dataEphem[0]['TRAJECTOIRE'] ?>
+		and was showing <?= $dataEphem[0]['PHASE'] ?>
 	</div>
-
 </body>
 </html>
+
+/**
+* =========================================================================
+*/
