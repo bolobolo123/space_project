@@ -12,7 +12,7 @@
 		$day = date_format($date, 'd');
 		// URL
 		$url  = 'http://www.lunopia.com/call?what=ephem&timeZone='.$timeZone.'&when=specDate&day='.$day.'&month='.$month.'&year='.$year.'&key='.$key;
-		$path = '../cache/'.md5(date_format($date, 'Y-m-d-ephem'));
+		$path = '../cache/'.md5(date_format($date, 'Y-m-d').'-ephem');
 		if (file_exists($path))
 			$forecast = file_get_contents($path);
 		else {

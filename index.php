@@ -1,5 +1,5 @@
 <?php
-	include 'assets/includes/config.php';
+	// include 'assets/includes/config.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,13 +10,47 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <meta description="">
 	<!-- CSS -->
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
 </head>
 <body>
-
-
+	<div class="container-door">
+		<div class="left">
+			<div class="logo">
+				<img src="assets/img/logo.png" alt="spaceviz-logo">
+			</div>
+		</div>
+		<div class="right"></div>
+		<div class="container-birth">
+			<form action="#" method="GET" class="form-birth">
+				<div class="inputs">
+					<label for="name">ENTER YOUR NAME</label>
+					<input type="text" name="name" id="name" autofocus>
+					<label for="birth">ENTER YOUR BIRTHDATE</label>
+					<input type="date" name="birth" id="birth">
+				</div>
+				<div class="code-form">
+					<div class="numbers">
+						<div class="number">1</div>
+						<div class="number">2</div>
+						<div class="number">3</div>
+						<div class="number">4</div>
+						<div class="number">5</div>
+						<div class="number">6</div>
+						<div class="number">7</div>
+						<div class="number">8</div>
+						<div class="number">9</div>
+						<div class="number">0</div>
+					</div>
+					<div class="submit">
+						<input type="submit" name="birthdate" value="VALID">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
 	<!-- SCRIPTS -->
-	<script src="#"></script>
+	<script src="assets/scripts/home.js"></script>
 </body>
 </html>
