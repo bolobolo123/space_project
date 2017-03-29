@@ -1,5 +1,12 @@
 <?php
-	// include 'assets/includes/config.php';
+//	include 'assets/includes/config.php'; //No databases are used on actual version of the website
+	include 'assets/includes/age_calculators.php';
+//	include 'assets/includes/astrology_test.php'; // Disabled until a permanent API key is found.
+//	include 'assets/includes/geolocalisation.php'; // Not used while Astrology is disabled
+	include 'assets/includes/exoplanets.php';
+// 	include 'assets/includes/launch_count.php'; // Disabled until a solution is found (see file's comments)
+	include 'assets/includes/ovni_sightings.php';
+	include 'assets/includes/trivia.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">

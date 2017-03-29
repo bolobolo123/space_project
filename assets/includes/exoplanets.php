@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php 
 	if (!empty($_GET)) {
 		// DATE RECUPERATION
@@ -13,12 +14,19 @@
 		}
 		$dataExos = json_decode($forecast, true);
 	}
+=======
+<?php
+/**
+ * ======================== Exoplanets API calls ===========================
+ */
+>>>>>>> fd340c555e0a9c62c4102a4f1044cb3c1a32e005
 
 	echo '<pre>';
 	print_r($dataExos);
 	echo '</pre>';
 	// Taille maintenant & taille avec la birth
 
+<<<<<<< HEAD
 ?>
 
 <!DOCTYPE html>
@@ -34,3 +42,8 @@
 	</form>
 </body>
 </html>
+=======
+/**
+ * =========================================================================
+ */
+>>>>>>> fd340c555e0a9c62c4102a4f1044cb3c1a32e005
