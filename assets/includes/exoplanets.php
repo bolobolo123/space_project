@@ -1,49 +1,38 @@
-<<<<<<< HEAD
 <?php 
-	if (!empty($_GET)) {
-		// DATE RECUPERATION
-		$year = $_GET['birth'];
-		$url = 'http://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?table=exoplanets&select=pl_hostname,pl_disc&where=pl_disc%3C'.$year.'&order=pl_disc&format=JSON';
-		// URL
-		$path = '../cache/'.md5($year.'-exoplanets');
-		if (file_exists($path))
-			$forecast = file_get_contents($path);
-		else {
-			$forecast = file_get_contents($url);
-			file_put_contents($path, $forecast);
-		}
-		$dataExos = json_decode($forecast, true);
-	}
-=======
-<?php
+
+        $url = 'http://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?table=exoplanets&select=pl_hostname,pl_disc&where=pl_disc%3C' . $year_of_birth . '&order=pl_disc&format=JSON';
+        // URL
+        $path = '../cache/' . md5($year_of_birth . '-exoplanets');
+        if (file_exists($path))
+            $forecast = file_get_contents($path);
+        else {
+            $forecast = file_get_contents($url);
+            file_put_contents($path, $forecast);
+        }
+        $data_Exos_birth = json_decode($forecast, true);
+
+        $url = 'http://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?table=exoplanets&select=pl_hostname,pl_disc&where=pl_disc%3C' . $current_year . '&order=pl_disc&format=JSON';
+        // URL
+        $path = '../cache/' . md5($current_year . '-exoplanets');
+        if (file_exists($path))
+            $forecast = file_get_contents($path);
+        else {
+            $forecast = file_get_contents($url);
+            file_put_contents($path, $forecast);
+        }
+        $data_Exos_current = json_decode($forecast, true);
+
+        $data_Exos_birth = count($data_Exos_birth);
+        $data_Exos_current = count($data_Exos_current);
+
 /**
  * ======================== Exoplanets API calls ===========================
  */
->>>>>>> fd340c555e0a9c62c4102a4f1044cb3c1a32e005
 
 	echo '<pre>';
-	print_r($dataExos);
+    echo '<h4>/////////////////////////////////////Exoplanets API/////////////////////////////////////</h4>';
+    echo '<br/>';
+	print_r('nbr of exoplanets discovered on your birthday : '.$data_Exos_birth);
+	echo '<br/>';
+	print_r('nbr of exoplanets discovered during your life : '.($data_Exos_current - $data_Exos_birth));
 	echo '</pre>';
-	// Taille maintenant & taille avec la birth
-
-<<<<<<< HEAD
-?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
-	<form action="#" method="GET">
-		<input type="year" name="birth" class="dateInp">
-		<input type="submit">
-	</form>
-</body>
-</html>
-=======
-/**
- * =========================================================================
- */
->>>>>>> fd340c555e0a9c62c4102a4f1044cb3c1a32e005

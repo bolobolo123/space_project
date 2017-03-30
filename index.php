@@ -3,10 +3,11 @@
 	// include 'assets/includes/age_calculators.php';
 //	include 'assets/includes/astrology_test.php'; // Disabled until a permanent API key is found.
 //	include 'assets/includes/geolocalisation.php'; // Not used while Astrology is disabled
-	// include 'assets/includes/exoplanets.php';
+	include 'assets/includes/exoplanets.php';
 // 	include 'assets/includes/launch_count.php'; // Disabled until a solution is found (see file's comments)
 	// include 'assets/includes/ovni_sightings.php';
 	// include 'assets/includes/trivia.php';
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,12 +31,12 @@
 		</div>
 		<div class="right"></div>
 		<div class="container-birth">
-			<form action="#" method="GET" class="form-birth">
+			<form action="#" method="POST" class="form-birth">
 				<div class="inputs">
 					<label for="name">ENTER YOUR NAME</label>
 					<input type="text" name="name" id="name" autofocus>
 					<label for="birth">ENTER YOUR BIRTHDATE</label>
-					<input type="date" name="birth" id="birth">
+					<input type="date" name="date_of_birth" id="birth">
 				</div>
 				<div class="code-form">
 					<div class="numbers">
