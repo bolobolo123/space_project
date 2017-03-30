@@ -2,11 +2,61 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b679881-e10d-4f89-8d44-d86977f4cfc9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/spinner.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/background-recap.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/clavier.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/interface-bleu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/landing/age.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/landing/age_hover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/landing/clickpoint.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/landing/event.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/landing/event_hover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/landing/info.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/landing/lampe.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/landing/lampe_hover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/landing/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/landing/mute.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/landing/planet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/landing/reset.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/landing/share.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/landing/soucoupe.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/landing/soucoupe_hover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/landing/telescope.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/landing/telescope_hover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/porte-droite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/porte-gauche.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cache/3e84f5417c788dd827875d4396a80f59" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/cache/cd2fc70961453a5e2dfeb075f813a784" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/includes/wiki_events.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/scripts/home.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/scripts/landing.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/scripts/recap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/components/_landing.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/components/_recap.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/views/pages/landing.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/views/pages/recap.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/cache/2405e4e4d801af2e3edbb72446e873ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/cache/2f31dfd1df6c4be7c174922876c57533" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/cache/5dc8a1efd17bb449bf9d1744e2b74cc1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/cache/605ba3e31232f86175304e6fd46c2ddf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/cache/6434d50c4e44ebc162ca5f4d16fd805c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/cache/83ad1810b0347fa9718e6c00077deca8" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/cache/87ee67d4c8952cfd93b7ad66779f87ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/cache/8e777ed1333bbc750f91f863f4308e2a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/cache/b32b10a358a16e9e65311b72ff537b28" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/cache/cba37473f0b392acf0595c9089e3f736" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/cache/dbe9cfa4d87bcd8020ad9dace66fb730" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/cache/f035323710f391431115e5b5dce561c4" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/cache/354a8ddbe5fd0ae15050dfcc7fa8a7d1" afterPath="$PROJECT_DIR$/assets/cache/0db7c46672675d8f3371b427ef451143" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/includes/age_calculators.php" afterPath="$PROJECT_DIR$/assets/includes/age_calculators.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/includes/launch_count.php" afterPath="$PROJECT_DIR$/assets/includes/launch_count.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/includes/ovni_sightings.php" afterPath="$PROJECT_DIR$/assets/includes/ovni_sightings.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/includes/astrology_test.php" afterPath="$PROJECT_DIR$/assets/includes/astrology_test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/includes/exoplanets.php" afterPath="$PROJECT_DIR$/assets/includes/exoplanets.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/styles/components/_index.scss" afterPath="$PROJECT_DIR$/assets/styles/components/_index.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/styles/main.css" afterPath="$PROJECT_DIR$/assets/styles/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/styles/main.css.map" afterPath="$PROJECT_DIR$/assets/styles/main.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/styles/main.scss" afterPath="$PROJECT_DIR$/assets/styles/main.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/styles/tools/_base.scss" afterPath="$PROJECT_DIR$/assets/styles/tools/_base.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/styles/tools/_vars.scss" afterPath="$PROJECT_DIR$/assets/styles/tools/_vars.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,9 +75,11 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1089">
-              <caret line="33" column="28" lean-forward="false" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
-              <folding />
+            <state relative-caret-position="594">
+              <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+              <folding>
+                <element signature="e#6#103#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -35,8 +87,8 @@
       <file leaf-file-name="astrology_test.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/includes/astrology_test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+            <state relative-caret-position="1038">
+              <caret line="49" column="61" lean-forward="true" selection-start-line="49" selection-start-column="61" selection-end-line="49" selection-end-column="61" />
               <folding>
                 <element signature="e#7#88#0#PHP" expanded="true" />
               </folding>
@@ -107,11 +159,9 @@
       <file leaf-file-name="exoplanets.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/includes/exoplanets.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="31" />
-              <folding>
-                <element signature="e#6#90#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="759">
+              <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -278,12 +328,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1490790853809</updated>
-      <workItem from="1490790854994" duration="18479000" />
+      <workItem from="1490790854994" duration="18883000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18479000" />
+    <option name="totallyTimeSpent" value="18883000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -357,11 +407,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/includes/exoplanets.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="31" />
-          <folding>
-            <element signature="e#6#90#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="759">
+          <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -381,16 +429,6 @@
           <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
           <folding>
             <element signature="e#7#78#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/includes/astrology_test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
-          <folding>
-            <element signature="e#7#88#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -435,11 +473,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/includes/astrology_test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1038">
+          <caret line="49" column="61" lean-forward="true" selection-start-line="49" selection-start-column="61" selection-end-line="49" selection-end-column="61" />
+          <folding>
+            <element signature="e#7#88#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1089">
-          <caret line="33" column="28" lean-forward="false" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="594">
+          <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+          <folding>
+            <element signature="e#6#103#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,6 +1,6 @@
 <?php
 //	include 'assets/includes/config.php'; //No databases are used on actual version of the website
-	include 'assets/includes/age_calculators.php';
+	// include 'assets/includes/age_calculators.php';
 //	include 'assets/includes/astrology_test.php'; // Disabled until a permanent API key is found.
 //	include 'assets/includes/geolocalisation.php'; // Not used while Astrology is disabled
 //	include 'assets/includes/exoplanets.php';
@@ -11,12 +11,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home</title>
-    <!-- META -->
+	<title>Home</title>
+	<!-- META -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <meta description="">
-    <!-- CSS -->
+	<!-- CSS -->
     <link rel="stylesheet" href="assets/styles/main.css">
     <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">

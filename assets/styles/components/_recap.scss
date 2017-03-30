@@ -1,0 +1,120 @@
+.recap-container {
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/background-recap.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	// HEADER
+	.header {
+		width: 100%;
+		height: 10%;
+		padding: 10px 15px 0 5%;
+		// FONT
+		font-family: $font-title;
+		font-size: $size-text;
+		// FLEX
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+
+		// HEADER CONTENT
+		.name {
+			color: $color-pink;
+			margin-bottom: 10px;
+		}
+		.birth {
+			color: $color-white;
+		}
+		// CROSS
+		a {
+			display: block;
+			// FONT
+			color: #ff1546;
+			font-size: 3em;
+			text-decoration: none;
+		}
+		// TITLE
+		h1 {
+			width: 100%;
+			margin-top: 100px;
+			// FONT
+			font-family: $font-title;
+			font-size: 10em;
+			font-weight: 700;
+			color: $color-main;
+			opacity: 0.5;
+			text-align: center;
+			letter-spacing: 20px;
+		}
+	}
+
+	// CONTENT
+	.container {
+		width: 90%;
+		height: 80%;
+		margin: auto;
+		margin-top: 60px; 
+		// FLEX
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		vertical-align: flex-start;
+		//  PLACE THE TITLE BEHIND
+		position: relative;
+		z-index: 1;
+
+		// EVENT & SQUARE
+		.recap-event, .square {
+			width: 30%;
+			height: 100%;
+		}
+		.square {
+			// FLEX
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			vertical-align: center;
+		}
+		// RECAP-X
+		.recap-evolution, .recap-time, .recap-astrology, .recap-funfact {
+			width: 100%;
+			height: 48%;
+		}
+		// BOX STYLE
+		.recap-evolution, .recap-time, .recap-astrology, .recap-funfact, .recap-event {
+			background-color: rgba(0, 0, 0, 0.8);
+			box-shadow: -5px 5px 30px 1px $color-black;
+			border: 2px solid rgba(4, 211, 167, 0.2);
+			// FONT
+			color: $color-white;
+		}
+
+		// CONTENT BOX
+		h2 {
+			font-family: $font-title;
+			font-size: 2em;
+			text-align: center;
+			text-transform: uppercase;
+			padding-top: 20px;
+		}
+		.line {
+			width: 100px;
+			height: 0px;
+			border: 1px solid $color-main;
+			margin: 5px 0px 30px 0px;
+			box-shadow: 0px 0px 20px 3px $color-main;
+			margin: 10px 50%;
+		}
+		p {
+			width: 50%;
+			margin: 30px auto;
+			// FONT
+			font-family: $font-text;
+			font-size: 14px;
+		}
+	}
+}
+
+

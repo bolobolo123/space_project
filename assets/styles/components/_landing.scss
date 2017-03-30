@@ -1,0 +1,257 @@
+.container-landing {
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/background-recap.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+		// HEADER
+	.header {
+		width: 100%;
+		height: 10%;
+		padding: 50px 50px 0 50px;
+		// FONT
+		font-family: $font-title;
+		font-size: $size-text;
+		// FLEX
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+
+		// HEADER CONTENT
+		.header-left {
+			width: 15%;
+			height: 100%;
+			margin-top: 50px;
+			// FLEX
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: center;
+
+			// ELEMENTS
+			.logo {
+				background: $color-black;
+				border-radius: 50%;
+				box-shadow: 0px 3px 10px 0px $color-white;
+				img {
+					opacity: 0.5;
+					width: 100px;
+				}
+			}
+			.info-perso {
+				margin-left: 50px;
+			}
+			.name {
+				color: $color-pink;
+				margin-bottom: 10px;
+			}
+			.birth {
+				color: $color-white;
+			}
+		}
+		.header-right {
+			width: 15%;
+			height: 100%;
+			// FLEX
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+	.container {
+		width: 90%;
+		height: 80%;
+		// FLEX
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-end;
+
+		// LEFT RESUME
+		.resume {
+			width: 30%;
+			height: 90%;
+			
+			// TITLE
+			.title-container {
+				width: 100%;
+				height: 80px;
+				.title {
+					// FONT
+					font-family: $font-title;
+					font-size: 3em;
+					color: $color-white;
+					text-align: center;
+					text-transform: uppercase;
+					padding-top: 20px;
+				}
+				.line {
+					width: 50%;
+					height: 0px;
+					border: 1px solid $color-main;
+					box-shadow: 0px 0px 20px 3px $color-main;
+					margin: 20px 50%;
+				}
+			}
+
+			// CONTENT OVERFLOW
+			.content-container {
+				width: 100%;
+				height: calc(100% - 110px);
+				margin-top: 30px;
+				// FLEX
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: center;
+				overflow-y: overlay;
+				
+				// BOXES
+				.content-box {
+					width: 100%;
+					height: auto;
+					background: rgba(0, 0, 0, 0.4);
+					padding: 30px;
+					margin-bottom: 5px;
+					// FONT
+					font-family: $font-title;
+					color: $color-white;
+
+					.intro {
+						// FONT
+						color: $color-main;
+						font-size: 18px;
+						margin-bottom: 10px;
+					}
+					.data {
+						// FONT
+						font-size: 20px;
+						font-weight: 700;
+					}
+					.data-text {
+						margin-top: 30px;
+						// FONT
+						font-family: $font-text;
+						font-size: $size-text;
+
+					}
+				}
+			}
+		}
+
+		// RIGHT PLANET
+		.planet {
+			width: 60%;
+			height: 100%;
+			position: relative;
+			// ICONS
+			.planet-icon, .clickpoint {
+				position: absolute;
+				cursor: pointer;
+			}
+			// PLANETICON & HOVERS
+			.planet-icon:first-child {
+				top: 300px;
+				left: 10px;
+				width: 80px;
+				height: 80px;
+				background-image: url(../img/landing/soucoupe.png);
+				background-repeat: no-repeat;
+			} .planet-icon:first-child:hover {
+				background-image: url(../img/landing/soucoupe_hover.png);
+			} .planet-icon:nth-child(2) {
+				top: 40px;
+				left: 250px;
+				width: 90px;
+				height: 100px;
+				background-image: url(../img/landing/telescope.png);
+				background-repeat: no-repeat;
+			} .planet-icon:nth-child(2):hover {
+				background-image: url(../img/landing/telescope_hover.png);
+			} .planet-icon:nth-child(3) {
+				top: 700px;
+				left: 180px;
+				width: 80px;
+				height: 80px;
+				background-image: url(../img/landing/lampe.png);
+				background-repeat: no-repeat;
+			} .planet-icon:nth-child(3):hover {
+				background-image: url(../img/landing/lampe_hover.png);
+			} .planet-icon:nth-child(4) {
+				top: 670px;
+				left: 500px;
+				width: 80px;
+				height: 80px;
+				background-image: url(../img/landing/event.png);
+				background-repeat: no-repeat;
+			} .planet-icon:nth-child(4):hover {
+				background-image: url(../img/landing/event_hover.png);
+			} .planet-icon:nth-child(5) {
+				top: 300px;
+				left: 670px;
+				width: 80px;
+				height: 80px;
+				background-image: url(../img/landing/age.png);
+				background-repeat: no-repeat;
+			} .planet-icon:nth-child(5):hover {
+				background-image: url(../img/landing/age_hover.png);
+			}
+			//CLICKPOINTS
+			.clickpoint:nth-child(7) {
+				top: 350px;
+				left: 73px;
+			}.clickpoint:nth-child(8) {
+				top: 120px;
+				left: 320px;
+			}.clickpoint:nth-child(9) {
+				top: 650px;
+				left: 200px;
+			}.clickpoint:nth-child(10) {
+				top: 677px;
+				left: 450px;
+			}.clickpoint:nth-child(11) {
+				top: 350px;
+				left: 636px;
+			}			
+			.planet-img {
+				position: absolute;
+				top: 100px;
+				left: 50px;
+			}
+		}
+	}
+
+	// SHARE BTN
+	.share {
+		width: 250px;
+		height: 50px;
+		border-radius: 20px 20px 0 0;
+		border: 2px solid $color-pink;
+		transition: 0.15s;
+		// POS
+		position: relative;
+		bottom: -50px;
+		left: 50%;
+		margin-left: -125px;
+		background: $color-black;
+		width: 250px;
+		// FONT
+		font-family: $font-title;
+		text-align: center;
+		line-height: 50px;
+		color: $color-white;
+	}
+	.share:hover {
+		box-shadow: inset 0px 0px 20px 1px rgba(255,255,255,0.15);
+		transition: 0.15s;
+	}
+	.infos {
+		// POS
+		position: absolute;
+		bottom: 50px;
+		right: 50px;
+	}
+} 

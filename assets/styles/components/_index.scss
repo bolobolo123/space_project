@@ -1,0 +1,158 @@
+.container-door {
+	width: 100%;
+	height: 100vh;
+	background-color: $color-black;
+
+	// BG's
+	.left {
+		width: 50%;
+		height: 120%;
+		// BG
+		background-image: url(../../assets/img/porte-gauche.jpg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: left;
+		// POS
+		position: absolute;
+		top: -50px; // To center the door
+		left: 0;
+		// LOGO
+		.logo img {
+			width: 250px;
+			opacity: 0.15;
+			margin: 100px 0 0 100px;
+		}
+	}
+	.right {
+		width: 65%;
+		height: 120%;
+		// BG
+		background-image: url(../../assets/img/porte-droite.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: right;
+		// POS
+		position: absolute;
+		top: -50px; // To center the door
+		right: 0;
+	}
+
+	// FORM
+	.container-birth {
+		width: 700px;
+		height: 700px;
+		// BG
+		background-image: url(../../assets/img/interface-bleu.png);
+		background-size: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		// POS
+		position: absolute; // CENTER THE BLOCK IN RESPONSIVE
+		top: 50%;
+		left: 50%;
+		margin-left: -360px;
+		margin-top: -320px;
+		// FLEX
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.form-birth {
+			width: 400px;
+			height: 400px;
+			// FLEX
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			// FONT
+			font-family: $font-title;
+			color: $color-white;
+			font-weight: 700;
+			font-size: 20px;
+
+			// ALL
+			.inputs, .code-form {
+				width: 100%;
+				height: auto;
+				display: flex;
+			}
+			// INPUTS
+			.inputs {
+				// FLEX
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: center;
+				margin-bottom: 30px;
+				opacity: 0.7;
+				label {
+					margin-bottom: 5px;
+				}
+				input {
+					width: 70%;
+					height: 40px;
+					margin-bottom: 10px;
+					text-align: center;
+					line-height: 30px;
+					border: solid 3px $color-main;
+					border-radius: 30px;
+				}
+			}
+			// DIGICODE
+			.code-form {
+				// FLEX
+				flex-direction: row;
+				justify-content: center;
+				// BG
+				background-image: url(../../assets/img/clavier.png);
+				background-size: contain;
+				background-position: 53% 50%;
+				background-repeat: no-repeat;
+				//FONT
+				color: $color-white;
+
+
+				// CODE
+				.numbers {
+					width: 160px;
+					height: auto;
+					opacity: 0.7;				
+					// FLEX
+					display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+					justify-content: center;
+					align-items: center;
+					padding-right: 10px;
+					// ALL NUMBERS
+					.number {
+						width: 50px;
+						height: 50px;
+						cursor: pointer;
+						border-radius: 50%;
+						// FONT
+						text-align: center;
+						line-height: 50px;
+					}
+				}
+				// SUBMIT
+				.submit {
+					margin-top: 0px;
+					width: 50px;
+					height: 70px;
+					text-align: center;
+					opacity: 0.7;
+					input[type='submit'] {
+						width: 100;
+						height: 100%;
+						// FONT
+						font-size: 15px;
+						text-align: center;
+						font-weight: 700;
+					}
+				}
+			}
+		}
+	}
+}
+
