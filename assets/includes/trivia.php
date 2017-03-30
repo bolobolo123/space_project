@@ -28,13 +28,8 @@ curl_setopt_array($curl, array(
 
 $response = curl_exec($curl);
 $response = json_decode($response);
-$err = curl_error($curl);
+$err      = curl_error($curl);
 curl_close($curl);
 
 $xml = simplexml_load_string($response);
 print_r($xml);
-
-echo '<pre>';
-print_r($response);
-echo '</pre>';
-

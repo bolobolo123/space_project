@@ -10,14 +10,9 @@ $path = '../cache/'.md5('event_wiki');
 	}
 	$dataWiki = json_encode($forecast, JSON_UNESCAPED_SLASHES);
 
-
-
 // $data = file_get_contents($url);
 // $data = json_encode($data, JSON_UNESCAPED_SLASHES);
 
 echo '<pre>';
 print_r($dataWiki);
 echo '</pre>';
-
-
-?>
