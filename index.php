@@ -7,7 +7,6 @@
 // 	include 'assets/includes/launch_count.php'; // Disabled until a solution is found (see file's comments)
 	// include 'assets/includes/ovni_sightings.php';
 	// include 'assets/includes/trivia.php';
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +14,7 @@
 	<title>Home</title>
 	<!-- META -->
     <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <meta description="">
 	<!-- CSS -->
     <link rel="stylesheet" href="assets/styles/main.css">
@@ -23,6 +22,7 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
 </head>
 <body>
+<<<<<<< HEAD
 	<div class="container-door">
 		<div class="left">
 			<div class="logo">
