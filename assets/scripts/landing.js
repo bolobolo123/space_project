@@ -73,3 +73,4 @@ $close_btn.addEventListener('click', function(e) {
 	$recap.style.display = 'none';
 });
 
+

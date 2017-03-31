@@ -24,8 +24,8 @@
 	<div class="recap-container">
 		<header class="header"> 
 			<div class="info-perso">
-				<p class="name">Amanda</p> 
-				<p class="birth"> /BIRTHDATE/ </p>
+				<p class="name"><?= $_POST['name'] ?></p> 
+				<p class="birth"> /<?= $_POST['date_of_birth'] ?>/</p>
 				<div class="line"></div>
 			</div>
 			<h1>SUMMARY</h1> 
@@ -77,8 +77,8 @@
 					<img src="../../img/logo.png" alt="logo">
 				</div>
 				<div class="info-perso">
-					<p class="name">Amanda</p> 
-					<p class="birth"> /BIRTHDATE/ </p>
+					<p class="name"><?= $_POST['name'] ?></p> 
+					<p class="birth"> /<?= $_POST['date_of_birth'] ?>/ </p>
 					<div class="line"></div>
 				</div>
 			</div>

@@ -1,7 +1,9 @@
 .container-door {
 	width: 100%;
 	height: 100vh;
-	background-color: #222222;
+	background-image: url(../img/background-recap.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 	
 	.left, .right {
 		height: 120%;
