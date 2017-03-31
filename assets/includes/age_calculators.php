@@ -34,6 +34,8 @@
     $data_compare_earth     = number_format((($age * 100)/4.57E9),8);
     $data_compare_rotations = number_format((($age * 365)/0.99726968),2);
     $data_compare_traveled  = number_format(($age * 9.3732E7),2);
+
+    $data_compare_haley     = number_format(2061 - $current_year);
     $date_compare_mercury   = number_format((($age * 365)/87.969),2);
     $date_compare_venus     = number_format((($age * 365)/224.701),2);
     $date_compare_mars      = number_format((($age * 365)/686.980),2);

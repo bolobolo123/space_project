@@ -48,9 +48,9 @@
 				<div class="recap-time">
 					<h2>Time</h2>
 					<div class="line"></div>
-						<p><strong>Age in bigbang years : </strong><?= $data_compare_bigbang ?></p>
-						<p><strong>Age in milkyway years : </strong><?= $data_compare_milky ?></p>
-						<p><strong>Age in earth years : </strong><?= $data_compare_earth ?></p>
+						<p><strong>Your entire existance represents, compared to the Big Bang : </strong><?= $data_compare_bigbang ?><strong> % of its span time</strong></p>
+						<p><strong>Your entire existance represents, compared to the Milky Way : </strong><?= $data_compare_milky ?><strong> % of its span time</strong></p>
+						<p><strong>Your entire existance represents, compared to the Earth : </strong><?= $data_compare_earth ?><strong> % of its span time</strong></p>
 				</div>
 			</div>
 			<div class="square">
@@ -64,7 +64,7 @@
 				<div class="recap-funfact">
 					<h2>Fun Facts</h2>
 					<div class="line"></div>
-						<p><strong>UFO sightings on your birthday :</strong> <?= $data_UFO_sightings ?></p>
+						<p><strong>UFO sightings on your birth day :</strong> <?= $data_UFO_sightings ?></p>
 				</div>
 			</div>
 	    </div>
@@ -98,7 +98,7 @@
 				</div>
 				<div class="content-container">
 					<div class="content-box">
-						<div class="intro">N° of exoplanets discovered on your birthday :</div>
+						<div class="intro">N° of exoplanets discovered on your first year of existance :</div>
 						<div class="data"><?= $data_Exos_birth ?></div>
 					</div>
 					<div class="content-box">
@@ -114,14 +114,14 @@
 				</div>
 				<div class="content-container">
 					<div class="content-box">
-						<div class="intro">COMPARED TO BIGBANG YOU ARE :</div>
-						<div class="data"><?= $data_compare_bigbang ?> yo</div>
+						<div class="intro">COMPARED TO THE BIGBANG's, YOUR LIFESPAN REPRESENTS :</div>
+						<div class="data"><?= $data_compare_bigbang ?> %</div>
 						<div class="data-text">
 							<div class="wrap">
 							<div class="text">
 							<ul>
-								<li><strong>COMPARED TO MILKYWAY :</strong> <?= $data_compare_milky ?> yo</li>
-								<li><strong>COMPARED TO EARTH : </strong><?= $data_compare_earth ?> yo</li>
+								<li><strong>OMPARED TO THE MILKY WAY's, YOUR LIFESPAN REPRESENTS : </strong> <?= $data_compare_milky ?> %</li>
+								<li><strong>OMPARED TO THE EARTH's, YOUR LIFESPAN REPRESENTS : </strong><?= $data_compare_earth ?> %</li>
 
 							</ul>
 							</div>
@@ -129,30 +129,30 @@
 						</div>
 					</div>
 					<div class="content-box">
-						<div class="intro">ON MERCURE YOU WOULD BE :</div>
-						<div class="data"> <?= $date_compare_mercury ?> yo</div>
+						<div class="intro">YOU'RE OLDER THAN YOU THINK, ON MERCURY YOU WOULD BE :</div>
+						<div class="data"> <?= $date_compare_mercury ?> years old</div>
 						<div class="data-text">
 							<div class="wrap">
 							<div class="text">
 							<ul>
-								<li><strong>ON VENUS :</strong> <?= $date_compare_venus ?> yo</li>
-								<li><strong>ON MARS :</strong> <?= $date_compare_mars ?> yo</li>
+								<li><strong>ON VENUS :</strong> <?= $date_compare_venus ?> years old</li>
 							</ul>
 							</div>
 							</div>
 						</div>
 					</div>
 					<div class="content-box">
-						<div class="intro">ON JUPITER YOU WOULD BE :</div>
-						<div class="data"> <?= $date_compare_jupiter ?> yo</div>
+						<div class="intro">YOU'RE YOUNGER THAN YOU THINK, ON JUPITER YOU WOULD BE :</div>
+						<div class="data"> <?= $date_compare_jupiter ?> years old</div>
 						<div class="data-text">
 							<div class="wrap">
 							<div class="text">
 							<ul>
-								<li><strong>ON SATURN :</strong> <?= $date_compare_saturn ?> yo</li>
-								<li><strong>ON URANUS :</strong> <?= $date_compare_uranus ?> yo</li>
-								<li><strong>ON NEPTUNE :</strong> <?= $date_compare_neptune ?> yo</li>
-								<li><strong>ON PLUTON :</strong> <?= $date_compare_pluto ?> yo</li>
+                                <li><strong>ON MARS :</strong> <?= $date_compare_mars ?> years old</li>
+								<li><strong>ON SATURN :</strong> <?= $date_compare_saturn ?> years old</li>
+								<li><strong>ON URANUS :</strong> <?= $date_compare_uranus ?> years old</li>
+								<li><strong>ON NEPTUNE :</strong> <?= $date_compare_neptune ?> years old</li>
+								<li><strong>ON PLUTO :</strong> <?= $date_compare_pluto ?> years old</li>
 							</ul>
 							</div>
 							</div>
@@ -163,7 +163,7 @@
 						<div class="data"><?= $data_compare_rotations ?></div>
 					</div>
 					<div class="content-box">
-						<div class="intro">DISTANCE TRAVELED IN MILKYWAY :</div>
+						<div class="intro">DISTANCE TRAVELED IN THE SOLAR SYSTEM :</div>
 						<div class="data"><?php $data_compare_traveled ?> Km</div>
 						<div class="data-text">
 								This result is based on the rotations of Earth around the Sun. You are like a spaceman that travel a lot everyday don't forget it !
@@ -178,7 +178,7 @@
 				</div>
 				<div class="content-container">
 					<div class="content-box">
-						<div class="intro">Closest rocket takeoff of your birthday :</div>
+						<div class="intro">CLOSEST ROCKET TAKEOFF OF YOUR BIRTH DAY :</div>
 						<div class="data"><?= $data_launch_close_op ?></div>
 						<div class="data"><strong>The </strong><?= $data_launch_close_op_date ?> </div>
 					</div>
@@ -186,7 +186,7 @@
 						<div class="intro">ROCKET NAME :</div>
 						<div class="data"><?= $data_launch_rocket_name ?></div>
 						<div class="data-text">
-							<a href="<?=$data_launch_rocket_wiki?>">Lien Wiki</a>
+							<a href="<?=$data_launch_rocket_wiki?>">Wiki link</a>
 						</div>
 					</div>
 					<div class="content-box">
@@ -202,7 +202,7 @@
 				</div>
 				<div class="content-container">
 					<div class="content-box">
-						<div class="intro">UFO SIGHTINGS ON YOUR BIRTHDAY :</div>
+						<div class="intro">UFO SIGHTINGS ON YOUR BIRTH DAY :</div>
 						<div class="data"><?= $data_UFO_sightings ?></div>
 					</div>
 				</div>
@@ -222,7 +222,7 @@
 						<div class="data"><?= $dataEphem[0]['TRAJECTOIRE'] ?></div>
 					</div>
 					<div class="content-box">
-						<div class="intro">AND SHE WAS SHOWING :</div>
+						<div class="intro">AND SHE WAS SHOWING HER :</div>
 						<div class="data"><?= $dataEphem[0]['PHASE']?></div>
 					</div>
 				</div>
@@ -241,8 +241,8 @@
 				<img src="../../img/landing/clickpoint.png" alt="click" class="clickpoint">
 			</div>
 		</div>
-		<div class="share">
-				SHARE THE EXPERIENCE
+		<div class="share" data-href="https://Spaceviz.com/index.php" data-layout="button" data-size="small" data-mobile-iframe="true">
+            <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2FSpaceviz.com%2Findex.php&amp;src=sdkpreparse">Share the experience</a>
 		</div>
 		<div class="infos">
 			<img src="../../img/landing/info.png" alt="infos">

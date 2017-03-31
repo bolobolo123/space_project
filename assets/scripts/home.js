@@ -1,10 +1,13 @@
 const $numbers   = document.querySelectorAll('.container-door .container-birth .code-form .numbers .number'),
 	  $birthdate = document.querySelector('.container-door .container-birth .inputs #birth'),
+      $process   = document.querySelector('.loading-message'),
 	  $btn 		 = document.querySelector('.submit input'),
+	  $birthCont = document.querySelector('.container-birth'),
 	  $door 	 = {
 	  	left: document.querySelector('.container-door .left'),
 	  	right: document.querySelector('.container-door .right')
-	  }; 
+	  };
+
 
 let birth   = [[], [], []],
 	clicks = 0;3
@@ -30,9 +33,18 @@ for (let i = 0; i < $numbers.length; i++) {
 }
 
 $btn.addEventListener('click', function(e)  {
-	$door.left.style.transform = 'translateX(-1000px)'
-	$door.right.style.transform = 'translateX(1000px)'
+	$door.left.style.transform = 'translateX(-1000px)';
+	$door.right.style.transform = 'translateX(1000px)';
+	$birthCont.style.opacity = 0;
+	$process.style.opacity = 1;
 })
 
 
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
 
