@@ -98,11 +98,11 @@
 				</div>
 				<div class="content-container">
 					<div class="content-box">
-						<div class="intro">N° of exoplanets discovered on your first year of existance :</div>
+						<div class="intro">N° OF EXOPLANETS DISCOVERED ON YOUR FIRST YEAR OF EXISTENCE :</div>
 						<div class="data"><?= $data_Exos_birth ?></div>
 					</div>
 					<div class="content-box">
-						<div class="intro">N° of exoplanets discovered during your life :</div>
+						<div class="intro">N° OF EXPLANETS DISCOVERED DURING YOUR LIFE :</div>
 						<div class="data"> <?= ($data_Exos_current - $data_Exos_birth) ?> </div>
 					</div>
 				</div>
@@ -114,14 +114,14 @@
 				</div>
 				<div class="content-container">
 					<div class="content-box">
-						<div class="intro">COMPARED TO THE BIGBANG's, YOUR LIFESPAN REPRESENTS :</div>
+						<div class="intro">COMPARED TO THE BIGBANG'S, YOUR LIFESPAN REPRESENTS :</div>
 						<div class="data"><?= $data_compare_bigbang ?> %</div>
 						<div class="data-text">
 							<div class="wrap">
 							<div class="text">
 							<ul>
-								<li><strong>OMPARED TO THE MILKY WAY's, YOUR LIFESPAN REPRESENTS : </strong> <?= $data_compare_milky ?> %</li>
-								<li><strong>OMPARED TO THE EARTH's, YOUR LIFESPAN REPRESENTS : </strong><?= $data_compare_earth ?> %</li>
+								<li><strong>COMPARED TO THE MILKY WAY'S, YOUR LIFESPAN REPRESENTS : </strong> <?= $data_compare_milky ?> %</li>
+								<li><strong>COMPARED TO THE EARTH's, YOUR LIFESPAN REPRESENTS : </strong><?= $data_compare_earth ?> %</li>
 
 							</ul>
 							</div>
@@ -136,6 +136,7 @@
 							<div class="text">
 							<ul>
 								<li><strong>ON VENUS :</strong> <?= $date_compare_venus ?> years old</li>
+								 <li><strong>ON MARS :</strong> <?= $date_compare_mars ?> years old</li>
 							</ul>
 							</div>
 							</div>
@@ -148,7 +149,6 @@
 							<div class="wrap">
 							<div class="text">
 							<ul>
-                                <li><strong>ON MARS :</strong> <?= $date_compare_mars ?> years old</li>
 								<li><strong>ON SATURN :</strong> <?= $date_compare_saturn ?> years old</li>
 								<li><strong>ON URANUS :</strong> <?= $date_compare_uranus ?> years old</li>
 								<li><strong>ON NEPTUNE :</strong> <?= $date_compare_neptune ?> years old</li>
@@ -164,7 +164,7 @@
 					</div>
 					<div class="content-box">
 						<div class="intro">DISTANCE TRAVELED IN THE SOLAR SYSTEM :</div>
-						<div class="data"><?php $data_compare_traveled ?> Km</div>
+						<div class="data"><?= $data_compare_traveled ?> Km</div>
 						<div class="data-text">
 								This result is based on the rotations of Earth around the Sun. You are like a spaceman that travel a lot everyday don't forget it !
 						</div>
@@ -205,6 +205,10 @@
 						<div class="intro">UFO SIGHTINGS ON YOUR BIRTH DAY :</div>
 						<div class="data"><?= $data_UFO_sightings ?></div>
 					</div>
+					<div class="content-box">
+						<div class="intro">YEARS YOU'LL HAVE TO WAIT UNTIL YOU SEE HALEY COMET :</div>
+						<div class="data"><?= $data_compare_haley ?></div>
+					</div>
 				</div>
 			</div>
 			<div class="resume astrology">
@@ -214,7 +218,7 @@
 				</div>
 				<div class="content-container">
 					<div class="content-box">
-						<div class="intro">YOU'RE BORN UNDER THE SIGN OF THE</div>
+						<div class="intro">MOON POSITION : </div>
 						<div class="data"><?= $dataEphem[0]['CONSTELLATION'] ?></div>
 					</div>
 					<div class="content-box">
@@ -243,9 +247,6 @@
 		</div>
 		<div class="share" data-href="https://Spaceviz.com/index.php" data-layout="button" data-size="small" data-mobile-iframe="true">
             <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2FSpaceviz.com%2Findex.php&amp;src=sdkpreparse">Share the experience</a>
-		</div>
-		<div class="infos">
-			<img src="../../img/landing/info.png" alt="infos">
 		</div>
 	</div>	
 	<!-- SCRIPTS -->

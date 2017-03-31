@@ -1,9 +1,11 @@
 <?php
+	 if (!empty($_POST)) {
 	        include 'assets/includes/age_calculators.php';
 	 		include 'assets/includes/astrology.php';
 	    	include 'assets/includes/exoplanets.php ';
 	 	    include 'assets/includes/launch_count.php';
 		    include 'assets/includes/ovni_sightings.php';
+	}
 ?>
 <!DOCTYPE html>
 <html lang="en">
