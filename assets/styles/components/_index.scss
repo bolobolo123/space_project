@@ -1,20 +1,23 @@
 .container-door {
 	width: 100%;
 	height: 100vh;
-	background-color: $color-black;
-
-	// BG's
-	.left {
-		width: 50%;
+	background-color: #222222;
+	
+	.left, .right {
 		height: 120%;
+		transition: 1s;
 		// BG
-		background-image: url(../../assets/img/porte-gauche.jpg);
 		background-repeat: no-repeat;
 		background-size: contain;
-		background-position: left;
 		// POS
 		position: absolute;
 		top: -50px; // To center the door
+	}
+	// BG's
+	.left {
+		width: 50%;
+		background-image: url(../../assets/img/porte-gauche.jpg);
+		background-position: left;
 		left: 0;
 		// LOGO
 		.logo img {
@@ -25,15 +28,8 @@
 	}
 	.right {
 		width: 65%;
-		height: 120%;
-		// BG
 		background-image: url(../../assets/img/porte-droite.png);
-		background-repeat: no-repeat;
-		background-size: contain;
 		background-position: right;
-		// POS
-		position: absolute;
-		top: -50px; // To center the door
 		right: 0;
 	}
 

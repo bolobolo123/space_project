@@ -1,13 +1,11 @@
 <?php
-//	    include 'assets/includes/config.php'; //No databases are used on actual version of the website
-        include 'assets/includes/age_calculators.php';
-//	    include 'assets/includes/geolocalisation.php'; // Not used while Astrology is disabled
-//  	include 'assets/includes/astrology_test.php'; // Disabled until a permanent API key is found.
-    	include 'assets/includes/exoplanets.php ';
- 	    include 'assets/includes/launch_count.php';
-	    include 'assets/includes/ovni_sightings.php';
-//	    include 'assets/includes/trivia.php'; //Still WIP in this version
-//	    include 'assets/includes/display_debug.php'; //Only used for debug
+		if (!empty($_POST)) {
+	        include 'assets/includes/age_calculators.php';
+	 		include 'assets/includes/astrology.php';
+	    	include 'assets/includes/exoplanets.php ';
+	 	    include 'assets/includes/launch_count.php';
+		    include 'assets/includes/ovni_sightings.php';
+		}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,7 +29,7 @@
 		</div>
 		<div class="right"></div>
 		<div class="container-birth">
-			<form action="#" method="POST" class="form-birth">
+			<form action="./assets/views/pages/landing.php" method="POST" class="form-birth">
 				<div class="inputs">
 					<label for="name">ENTER YOUR NAME</label>
 					<input type="text" name="name" id="name" autofocus>

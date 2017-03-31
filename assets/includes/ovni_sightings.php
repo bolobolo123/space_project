@@ -9,6 +9,4 @@ $result = json_decode($result);
 
 $data_UFO_sightings = $result->sightingsReturned;
 
-/**
- * ===========================================================
- */
+

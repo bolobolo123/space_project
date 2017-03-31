@@ -139,16 +139,18 @@ html, body {
 .container-door {
   width: 100%;
   height: 100vh;
-  background-color: #1d1d1d; }
-  .container-door .left {
-    width: 50%;
+  background-color: #222222; }
+  .container-door .left, .container-door .right {
     height: 120%;
-    background-image: url(../../assets/img/porte-gauche.jpg);
+    transition: 1s;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: left;
     position: absolute;
-    top: -50px;
+    top: -50px; }
+  .container-door .left {
+    width: 50%;
+    background-image: url(../../assets/img/porte-gauche.jpg);
+    background-position: left;
     left: 0; }
     .container-door .left .logo img {
       width: 250px;
@@ -156,13 +158,8 @@ html, body {
       margin: 100px 0 0 100px; }
   .container-door .right {
     width: 65%;
-    height: 120%;
     background-image: url(../../assets/img/porte-droite.png);
-    background-repeat: no-repeat;
-    background-size: contain;
     background-position: right;
-    position: absolute;
-    top: -50px;
     right: 0; }
   .container-door .container-birth {
     width: 700px;
@@ -253,9 +250,12 @@ html, body {
   height: 100vh;
   background-image: url(../img/background-recap.png);
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  display: none; }
+  .recap-container strong {
+    font-weight: 700; }
   .recap-container .header {
-    width: 100%;
+    width: 90%;
     height: 10%;
     padding: 10px 15px 0 5%;
     font-family: "Space Mono", monospace;
@@ -285,7 +285,7 @@ html, body {
       text-align: center;
       letter-spacing: 20px; }
   .recap-container .container {
-    width: 90%;
+    width: 80%;
     height: 80%;
     margin: auto;
     margin-top: 60px;
@@ -325,7 +325,7 @@ html, body {
       box-shadow: 0px 0px 20px 3px #04d3a7;
       margin: 10px 50%; }
     .recap-container .container p {
-      width: 50%;
+      width: 65%;
       margin: 30px auto;
       font-family: "Josefin Sans", sans-serif;
       font-size: 14px; }
@@ -369,12 +369,14 @@ html, body {
       .container-landing .header .header-left .birth {
         color: #fff; }
     .container-landing .header .header-right {
-      width: 15%;
+      width: 10%;
       height: 100%;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center; }
+      .container-landing .header .header-right .summary, .container-landing .header .header-right .newViz {
+        cursor: pointer; }
   .container-landing .container {
     width: 90%;
     height: 80%;
@@ -382,6 +384,8 @@ html, body {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end; }
+    .container-landing .container .advance, .container-landing .container .clock, .container-landing .container .evolutions, .container-landing .container .facts {
+      display: none; }
     .container-landing .container .resume {
       width: 30%;
       height: 90%; }
@@ -428,7 +432,27 @@ html, body {
           .container-landing .container .resume .content-container .content-box .data-text {
             margin-top: 30px;
             font-family: "Josefin Sans", sans-serif;
-            font-size: 20px; }
+            font-size: 20px;
+            line-height: 30px; }
+            .container-landing .container .resume .content-container .content-box .data-text .text {
+              display: none; }
+            .container-landing .container .resume .content-container .content-box .data-text .wrap {
+              width: 15px;
+              height: 15px;
+              text-decoration: none;
+              background-image: url(../img/landing/Triangle.png);
+              background-position: center;
+              background-size: 100%;
+              cursor: default; }
+            .container-landing .container .resume .content-container .content-box .data-text .wrap:hover {
+              width: 100%;
+              height: auto;
+              border-radius: 0;
+              background-image: none; }
+            .container-landing .container .resume .content-container .content-box .data-text .wrap:hover .text {
+              display: block; }
+          .container-landing .container .resume .content-container .content-box strong {
+            font-weight: 700; }
     .container-landing .container .planet {
       width: 60%;
       height: 100%;
@@ -444,7 +468,7 @@ html, body {
         z-index: 2;
         background-image: url(../img/landing/soucoupe.png);
         background-repeat: no-repeat; }
-      .container-landing .container .planet .planet-icon:first-child:hover {
+      .container-landing .container .planet .planet-icon:first-child:hover, .container-landing .container .planet .planet-icon:first-child.active {
         background-image: url(../img/landing/soucoupe_hover.png); }
       .container-landing .container .planet .planet-icon:nth-child(2) {
         top: 40px;
@@ -454,7 +478,7 @@ html, body {
         z-index: 2;
         background-image: url(../img/landing/telescope.png);
         background-repeat: no-repeat; }
-      .container-landing .container .planet .planet-icon:nth-child(2):hover {
+      .container-landing .container .planet .planet-icon:nth-child(2):hover, .container-landing .container .planet .planet-icon:nth-child(2).active {
         background-image: url(../img/landing/telescope_hover.png); }
       .container-landing .container .planet .planet-icon:nth-child(3) {
         top: 700px;
@@ -464,7 +488,7 @@ html, body {
         z-index: 2;
         background-image: url(../img/landing/lampe.png);
         background-repeat: no-repeat; }
-      .container-landing .container .planet .planet-icon:nth-child(3):hover {
+      .container-landing .container .planet .planet-icon:nth-child(3):hover, .container-landing .container .planet .planet-icon:nth-child(3).active {
         background-image: url(../img/landing/lampe_hover.png); }
       .container-landing .container .planet .planet-icon:nth-child(4) {
         top: 670px;
@@ -474,7 +498,7 @@ html, body {
         z-index: 2;
         background-image: url(../img/landing/event.png);
         background-repeat: no-repeat; }
-      .container-landing .container .planet .planet-icon:nth-child(4):hover {
+      .container-landing .container .planet .planet-icon:nth-child(4):hover, .container-landing .container .planet .planet-icon:nth-child(4).active {
         background-image: url(../img/landing/event_hover.png); }
       .container-landing .container .planet .planet-icon:nth-child(5) {
         top: 300px;
@@ -484,7 +508,7 @@ html, body {
         z-index: 2;
         background-image: url(../img/landing/age.png);
         background-repeat: no-repeat; }
-      .container-landing .container .planet .planet-icon:nth-child(5):hover {
+      .container-landing .container .planet .planet-icon:nth-child(5):hover, .container-landing .container .planet .planet-icon:nth-child(5).active {
         background-image: url(../img/landing/age_hover.png); }
       .container-landing .container .planet .clickpoint:nth-child(7) {
         top: 350px;
@@ -511,6 +535,7 @@ html, body {
     border-radius: 20px 20px 0 0;
     border: 2px solid #ff1546;
     transition: 0.15s;
+    cursor: pointer;
     position: relative;
     bottom: -50px;
     left: 50%;
@@ -525,6 +550,7 @@ html, body {
     box-shadow: inset 0px 0px 20px 1px rgba(255, 255, 255, 0.15);
     transition: 0.15s; }
   .container-landing .infos {
+    cursor: pointer;
     position: absolute;
     bottom: 50px;
     right: 50px; }

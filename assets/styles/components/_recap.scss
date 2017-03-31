@@ -4,10 +4,13 @@
 	background-image: url(../img/background-recap.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-
+	display: none;
+	strong {
+		font-weight: 700;
+	}
 	// HEADER
 	.header {
-		width: 100%;
+		width: 90%;
 		height: 10%;
 		padding: 10px 15px 0 5%;
 		// FONT
@@ -52,7 +55,7 @@
 
 	// CONTENT
 	.container {
-		width: 90%;
+		width: 80%;
 		height: 80%;
 		margin: auto;
 		margin-top: 60px; 
@@ -108,7 +111,7 @@
 			margin: 10px 50%;
 		}
 		p {
-			width: 50%;
+			width: 65%;
 			margin: 30px auto;
 			// FONT
 			font-family: $font-text;

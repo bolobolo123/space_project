@@ -52,13 +52,16 @@
 			}
 		}
 		.header-right {
-			width: 15%;
+			width: 10%;
 			height: 100%;
 			// FLEX
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
 			align-items: center;
+			.summary, .newViz {
+				cursor: pointer;
+			}
 		}
 	}
 	.container {
@@ -69,6 +72,24 @@
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: flex-end;
+
+		// PANELS
+		.advance, .clock, .evolutions, .facts {
+			display: none;
+		}
+		// .clock {
+		// 	display: none;
+		// }
+		// .evolutions {
+		// 	display: none;
+		// }
+		// .facts {
+		// 	display: none;
+		// }
+		.astrology {
+
+		}
+
 
 		// LEFT RESUME
 		.resume {
@@ -136,7 +157,32 @@
 						// FONT
 						font-family: $font-text;
 						font-size: $size-text;
+						line-height: 30px;
+						.text {
+							display: none;
+						}
+						.wrap {
+							width: 15px;
+							height: 15px;
+							text-decoration: none;
+							background-image: url(../img/landing/Triangle.png);
+							background-position: center;
+							background-size: 100%;
+							cursor: default;
+						}
+						.wrap:hover {
+							width: 100%;
+							height: auto;
+							border-radius: 0;
+							background-image: none;
+						}
+						.wrap:hover .text {
+							display: block;
+						}
 
+					}
+					strong {
+						font-weight: 700;
 					}
 				}
 			}
@@ -161,7 +207,7 @@
 				z-index: 2;
 				background-image: url(../img/landing/soucoupe.png);
 				background-repeat: no-repeat;
-			} .planet-icon:first-child:hover {
+			} .planet-icon:first-child:hover, .planet-icon:first-child.active {
 				background-image: url(../img/landing/soucoupe_hover.png);
 			} .planet-icon:nth-child(2) {
 				top: 40px;
@@ -171,7 +217,7 @@
 				z-index: 2;
 				background-image: url(../img/landing/telescope.png);
 				background-repeat: no-repeat;
-			} .planet-icon:nth-child(2):hover {
+			} .planet-icon:nth-child(2):hover, .planet-icon:nth-child(2).active {
 				background-image: url(../img/landing/telescope_hover.png);
 			} .planet-icon:nth-child(3) {
 				top: 700px;
@@ -181,7 +227,7 @@
 				z-index: 2;
 				background-image: url(../img/landing/lampe.png);
 				background-repeat: no-repeat;
-			} .planet-icon:nth-child(3):hover {
+			} .planet-icon:nth-child(3):hover, .planet-icon:nth-child(3).active {
 				background-image: url(../img/landing/lampe_hover.png);
 			} .planet-icon:nth-child(4) {
 				top: 670px;
@@ -191,7 +237,7 @@
 				z-index: 2;
 				background-image: url(../img/landing/event.png);
 				background-repeat: no-repeat;
-			} .planet-icon:nth-child(4):hover {
+			} .planet-icon:nth-child(4):hover, .planet-icon:nth-child(4).active {
 				background-image: url(../img/landing/event_hover.png);
 			} .planet-icon:nth-child(5) {
 				top: 300px;
@@ -201,7 +247,7 @@
 				z-index: 2;
 				background-image: url(../img/landing/age.png);
 				background-repeat: no-repeat;
-			} .planet-icon:nth-child(5):hover {
+			} .planet-icon:nth-child(5):hover, .planet-icon:nth-child(5).active {
 				background-image: url(../img/landing/age_hover.png);
 			}
 			//CLICKPOINTS
@@ -236,6 +282,7 @@
 		border-radius: 20px 20px 0 0;
 		border: 2px solid $color-pink;
 		transition: 0.15s;
+		cursor: pointer;
 		// POS
 		position: relative;
 		bottom: -50px;
@@ -254,6 +301,7 @@
 		transition: 0.15s;
 	}
 	.infos {
+		cursor: pointer;
 		// POS
 		position: absolute;
 		bottom: 50px;

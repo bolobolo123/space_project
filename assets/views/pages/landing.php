@@ -1,3 +1,11 @@
+<?php
+        include '../../includes/age_calculators.php';
+ 		include '../../includes/astrology.php';
+    	include '../../includes/exoplanets.php ';
+ 	    include '../../includes/launch_count.php';
+	    include '../../includes/ovni_sightings.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +21,55 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
 </head>
 <body>
+	<div class="recap-container">
+		<header class="header"> 
+			<div class="info-perso">
+				<p class="name">Amanda</p> 
+				<p class="birth"> /BIRTHDATE/ </p>
+				<div class="line"></div>
+			</div>
+			<h1>SUMMARY</h1> 
+			<a href="#" alt="close" class="close">&times;</a> 
+		</header>
+	   	<div class="container">
+			<div class="recap-event">
+				<h2>Events</h2>
+				<div class="line"></div>
+					<p><strong>Closest rocket takeoff :</strong><?= $data_launch_close_op ?></p>
+					<p><strong>Rocket name :</strong> <?= $data_launch_rocket_name ?></p>
+					<p><strong>Rockets Launched since Birthday :</strong> <?= $data_launch_nbr ?></p>
+			</div>
+			<div class="square">
+				<div class="recap-evolution">
+					<h2>Evolution</h2>
+					<div class="line"></div>
+					<p><strong>Exoplanets discovered on your birthday :</strong> <?= $data_Exos_birth ?></p>
+					<p><strong>Exoplanets discovered since your birthday :</strong> <?= ($data_Exos_current - $data_Exos_birth)  ?></p>
+				</div>
+				<div class="recap-time">
+					<h2>Time</h2>
+					<div class="line"></div>
+						<p><strong>Age in bigbang years : </strong><?= $data_compare_bigbang ?></p>
+						<p><strong>Age in milkyway years : </strong><?= $data_compare_milky ?></p>
+						<p><strong>Age in earth years : </strong><?= $data_compare_earth ?></p>
+				</div>
+			</div>
+			<div class="square">
+				<div class="recap-astrology">
+					<h2>Astrology</h2>
+					<div class="line"></div>
+						<p><strong>Born under :</strong> <?= $dataEphem[0]['CONSTELLATION'] ?></p>
+						<p><strong>Moon was on stage :</strong> <?= $dataEphem[0]['TRAJECTOIRE'] ?></p>
+						<p><strong>Moon was showing :</strong> <?= $dataEphem[0]['PHASE'] ?></p>
+				</div>
+				<div class="recap-funfact">
+					<h2>Fun Facts</h2>
+					<div class="line"></div>
+						<p><strong>UFO sightings on your birthday :</strong> <?= $data_UFO_sightings ?></p>
+				</div>
+			</div>
+	    </div>
+    </div>
 	<div class="container-landing">
 		<header class="header">
 			<div class="header-left">
@@ -29,51 +86,154 @@
 				<div class="summary">
 					<img src="../../img/landing/share.png" alt="summary">
 				</div>
-				<div class="newViz">
+				<a href="../../../index.php" class="newViz">
 					<img src="../../img/landing/reset.png" alt="new">
-				</div>
-				<div class="mute">
-					<img src="../../img/landing/mute.png" alt="mute">
-				</div>
+				</a>
 			</div>
 		</header>		
 		<div class="container">
-			<div class="resume">
+			<div class="resume advance">
+				<div class="title-container">
+					<h1 class="title">EVOLUTION</h1>
+					<div class="line"></div>
+				</div>
+				<div class="content-container">
+					<div class="content-box">
+						<div class="intro">N° of exoplanets discovered on your birthday :</div>
+						<div class="data"><?= $data_Exos_birth ?></div>
+					</div>
+					<div class="content-box">
+						<div class="intro">N° of exoplanets discovered during your life :</div>
+						<div class="data"> <?= ($data_Exos_current - $data_Exos_birth) ?> </div>
+					</div>
+				</div>
+			</div>
+			<div class="resume clock">
+				<div class="title-container">
+					<h1 class="title">TIME</h1>
+					<div class="line"></div>
+				</div>
+				<div class="content-container">
+					<div class="content-box">
+						<div class="intro">COMPARED TO BIGBANG YOU ARE :</div>
+						<div class="data"><?= $data_compare_bigbang ?> yo</div>
+						<div class="data-text">
+							<div class="wrap">
+							<div class="text">
+							<ul>
+								<li><strong>COMPARED TO MILKYWAY :</strong> <?= $data_compare_milky ?> yo</li>
+								<li><strong>COMPARED TO EARTH : </strong><?= $data_compare_earth ?> yo</li>
+
+							</ul>
+							</div>
+							</div>
+						</div>
+					</div>
+					<div class="content-box">
+						<div class="intro">ON MERCURE YOU WOULD BE :</div>
+						<div class="data"> <?= $date_compare_mercury ?> yo</div>
+						<div class="data-text">
+							<div class="wrap">
+							<div class="text">
+							<ul>
+								<li><strong>ON VENUS :</strong> <?= $date_compare_venus ?> yo</li>
+								<li><strong>ON MARS :</strong> <?= $date_compare_mars ?> yo</li>
+							</ul>
+							</div>
+							</div>
+						</div>
+					</div>
+					<div class="content-box">
+						<div class="intro">ON JUPITER YOU WOULD BE :</div>
+						<div class="data"> <?= $date_compare_jupiter ?> yo</div>
+						<div class="data-text">
+							<div class="wrap">
+							<div class="text">
+							<ul>
+								<li><strong>ON SATURN :</strong> <?= $date_compare_saturn ?> yo</li>
+								<li><strong>ON URANUS :</strong> <?= $date_compare_uranus ?> yo</li>
+								<li><strong>ON NEPTUNE :</strong> <?= $date_compare_neptune ?> yo</li>
+								<li><strong>ON PLUTON :</strong> <?= $date_compare_pluto ?> yo</li>
+							</ul>
+							</div>
+							</div>
+						</div>
+					</div>
+					<div class="content-box">
+						<div class="intro">EARTH ROTATIONS SINCE YOUR BIRTHDAY </div>
+						<div class="data"><?= $data_compare_rotations ?></div>
+					</div>
+					<div class="content-box">
+						<div class="intro">DISTANCE TRAVELED IN MILKYWAY :</div>
+						<div class="data"><?php $data_compare_traveled ?> Km</div>
+						<div class="data-text">
+								This result is based on the rotations of Earth around the Sun. You are like a spaceman that travel a lot everyday don't forget it !
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="resume evolutions">
+				<div class="title-container">
+					<h1 class="title">EVENTS</h1>
+					<div class="line"></div>
+				</div>
+				<div class="content-container">
+					<div class="content-box">
+						<div class="intro">Closest rocket takeoff of your birthday :</div>
+						<div class="data"><?= $data_launch_close_op ?></div>
+						<div class="data"><strong>The </strong><?= $data_launch_close_op_date ?> </div>
+					</div>
+					<div class="content-box">
+						<div class="intro">ROCKET NAME :</div>
+						<div class="data"><?= $data_launch_rocket_name ?></div>
+						<div class="data-text">
+							<a href="<?=$data_launch_rocket_wiki?>">Lien Wiki</a>
+						</div>
+					</div>
+					<div class="content-box">
+						<div class="intro">ROCKET LAUNCH SINCE YOUR BIRTHDAY :</div>
+						<div class="data"> <?= $data_launch_nbr ?> rockets</div>
+					</div>
+				</div>
+			</div>
+			<div class="resume facts">
+				<div class="title-container">
+					<h1 class="title">FUN FACTS</h1>
+					<div class="line"></div>
+				</div>
+				<div class="content-container">
+					<div class="content-box">
+						<div class="intro">UFO SIGHTINGS ON YOUR BIRTHDAY :</div>
+						<div class="data"><?= $data_UFO_sightings ?></div>
+					</div>
+				</div>
+			</div>
+			<div class="resume astrology">
 				<div class="title-container">
 					<h1 class="title">ASTROLOGY</h1>
 					<div class="line"></div>
 				</div>
 				<div class="content-container">
 					<div class="content-box">
-						<div class="intro">YOUR ZODIAC IS :</div>
-						<div class="data">AQUARIUS</div>
+						<div class="intro">YOU'RE BORN UNDER THE SIGN OF THE</div>
+						<div class="data"><?= $dataEphem[0]['CONSTELLATION'] ?></div>
 					</div>
 					<div class="content-box">
-						<div class="intro">YOUR ZODIAC IS :</div>
-						<div class="data">AQUARIUS</div>
+						<div class="intro">MOON WAS ON STAGE :</div>
+						<div class="data"><?= $dataEphem[0]['TRAJECTOIRE'] ?></div>
 					</div>
 					<div class="content-box">
-						<div class="intro">YOUR ZODIAC IS :</div>
-						<div class="data">AQUARIUS</div>
-						<div class="data-text">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga possimus enim accusantium quae cupiditate, beatae reprehenderit facere tenetur ipsa deserunt quisquam tempore odit harum commodi nobis saepe ratione, soluta ut.
-						</div>
-					</div>
-					<div class="content-box">
-						<div class="intro">YOUR ZODIAC IS :</div>
-						<div class="data">AQUARIUS</div>
-						<div class="data-text">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga possimus enim accusantium quae cupiditate, beatae reprehenderit facere tenetur ipsa deserunt quisquam tempore odit harum commodi nobis saepe ratione, soluta ut.
-						</div>
+						<div class="intro">AND SHE WAS SHOWING :</div>
+						<div class="data"><?= $dataEphem[0]['PHASE']?></div>
 					</div>
 				</div>
 			</div>
 			<div class="planet">
-				<div class="planet-icon"></div>
-				<div class="planet-icon"></div>
-				<div class="planet-icon"></div>
-				<div class="planet-icon"></div>
-				<div class="planet-icon"></div>
+				<div class="planet-icon ufo"></div>
+				<div class="planet-icon astro active"></div>
+				<div class="planet-icon advances"></div>
+				<div class="planet-icon event"></div>
+				<div class="planet-icon age"></div>
 				<img src="../../img/landing/planet.png" alt="planet" class="planet-img">
 				<img src="../../img/landing/clickpoint.png" alt="click" class="clickpoint">
 				<img src="../../img/landing/clickpoint.png" alt="click" class="clickpoint">
