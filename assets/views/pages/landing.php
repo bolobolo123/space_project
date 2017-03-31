@@ -5,7 +5,6 @@
  	    include '../../includes/launch_count.php';
 	    include '../../includes/ovni_sightings.php';
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
