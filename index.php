@@ -20,6 +20,7 @@
 </head>
 <body>
 	<div class="container-door">
+        <div class="loading-message">Processing...</div>
 		<div class="left">
 			<div class="logo">
 				<img src="assets/img/logo.png" alt="spaceviz-logo">
@@ -31,7 +32,7 @@
 				<div class="inputs">
 					<label for="name">ENTER YOUR NAME</label>
 					<input type="text" name="name" id="name" autofocus>
-					<label for="birth">ENTER YOUR BIRTHDATE</label>
+					<label for="birth">ENTER YOUR BIRTH DATE</label>
 					<input type="date" name="date_of_birth" id="birth">
 				</div>
 				<div class="code-form">
