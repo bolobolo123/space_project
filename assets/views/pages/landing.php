@@ -242,8 +242,8 @@
 				<img src="../../img/landing/clickpoint.png" alt="click" class="clickpoint">
 			</div>
 		</div>
-		<div class="share">
-				SHARE THE EXPERIENCE
+		<div class="share" data-href="https://Spaceviz.com/index.php" data-layout="button" data-size="small" data-mobile-iframe="true">
+            <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2FSpaceviz.com%2Findex.php&amp;src=sdkpreparse">Share the experience</a>
 		</div>
 		<div class="infos">
 			<img src="../../img/landing/info.png" alt="infos">
